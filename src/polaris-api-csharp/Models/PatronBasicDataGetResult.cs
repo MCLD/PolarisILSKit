@@ -163,7 +163,7 @@ namespace Clc.Polaris.Api.Models
 		/// <summary>
 		/// The date the patron registered.
 		/// </summary>
-		public DateTime RegistrationDate { get; set; }
+		public DateTime? RegistrationDate { get; set; }
 
 		/// <summary>
 		/// The date of this patron's last activity.
@@ -173,7 +173,7 @@ namespace Clc.Polaris.Api.Models
 		/// <summary>
 		/// The date this patron will require an access check.
 		/// </summary>
-		public DateTime AddrCheckDate { get; set; }
+		public DateTime? AddrCheckDate { get; set; }
 
 		/// <summary>
 		/// The number of new messages the patron has.
