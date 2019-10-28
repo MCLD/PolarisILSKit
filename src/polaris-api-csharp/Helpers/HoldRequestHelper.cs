@@ -71,7 +71,7 @@ namespace Clc.Polaris.Api.Helpers
         {
             var doc = new XDocument(
                 new XElement("HoldRequestReplyData",
-                             new XElement("TxnGroupQualifier", holdRequest.TxnGroupQualifier),
+                             new XElement("TxnGroupQualifier", holdRequest.TxnGroupQualifer),
                              new XElement("TxnQualifier", holdRequest.TxnQualifier),
                              new XElement("RequestingOrgID", requestingOrgId),
                              new XElement("Answer", answer),

@@ -15,7 +15,7 @@ namespace Clc.Polaris.Api.Models
 		/// <summary>
 		/// TxnGroupQualifier of the hold request.
 		/// </summary>
-		public string TxnGroupQualifier { get; set; }
+		public string TxnGroupQualifer { get; set; }
 
 		/// <summary>
 		/// TxnQualifier of the hold request.
