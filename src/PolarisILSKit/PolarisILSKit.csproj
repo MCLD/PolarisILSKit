@@ -1,12 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Description>PolarisILSKit</Description>
-    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
-    <Version>1.0.0</Version>
+    <Authors>Central Library Consortium and Maricopa County Library District</Authors>
+    <CodeAnalysisRuleSet>../../RuleSet.ruleset</CodeAnalysisRuleSet>
+    <Description>Provide access to view Polaris ILS data and make updates through the API</Description>
+	<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageReleaseNotes>See https://github.com/mcld/PolarisILSKit/packages</PackageReleaseNotes>
+    <Product>Polaris ILS Kit</Product>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/iafb/PolarisILSKit</RepositoryUrl>
+    <RepositoryUrl>https://github.com/mcld/PolarisILSKit</RepositoryUrl>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+    <Version>0.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
