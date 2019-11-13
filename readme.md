@@ -1,8 +1,8 @@
 # PolarisILSKit
 
-[.NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) library for communicating with the Polaris ILS, available as a package from the [NuGet Gallery](https://www.nuget.org/packages/PolarisILSKit/).
+PolarisILSKit is a [.NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) library for communicating with the Polaris ILS, available as a package from the [NuGet Gallery](https://www.nuget.org/packages/PolarisILSKit/).
 
-This project is based on the [CLC Polaris API Helper Library](https://bitbucket.org/clcdpc/polaris-api-csharp/src/master/) (which is available in the NuGet Gallery as [PolarisApiLibrary](https://www.nuget.org/packages/PolarisApiLibrary/)). It includes bug fixes and enhancements and is published under the NuGet package name PolarisILSKit.
+This project is based on the [CLC Polaris API Helper Library](https://bitbucket.org/clcdpc/polaris-api-csharp/src/master/) (which is available in the NuGet Gallery as [PolarisApiLibrary](https://www.nuget.org/packages/PolarisApiLibrary/)). It includes bug fixes and enhancements to the original PolarisApiLibrary package.
 
 ## Using the Polaris API Helper Library
 

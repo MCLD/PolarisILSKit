@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## Unreleased
+### Fixed
+- Really fixed automatic deployment script this time
+- Corrected link to release notes
+- Added environment file to .gitignore so it won't be checked in inadvertently
 
 ## [0.0.2] - 2019-11-13
 ### Fixed
