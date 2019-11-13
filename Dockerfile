@@ -9,4 +9,4 @@ COPY . ./
 RUN dotnet restore
 RUN dotnet pack -c Release --no-restore -o /app/publish
 
-ENTRYPOINT ["/bin/bash", "docker-release.bash"]
+ENTRYPOINT ["/bin/bash", "docker-deploy.bash"]
