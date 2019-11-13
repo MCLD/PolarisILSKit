@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## Unreleased
 
+## [0.0.2] - 2019-11-13
+### Fixed
+- Fixed automatic deployment
+
 ## [0.0.1] - 2019-11-13
 ### Added
 - bitbucket.org/[clcdpc/polaris-api-csharp](https://bitbucket.org/clcdpc/polaris-api-csharp/src/master/) code
@@ -23,4 +27,5 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Removed
 - Package files for [CLCDPC package](https://www.nuget.org/packages/PolarisApiLibrary/) 
 
+[0.0.2]: https://github.com/mcld/PolarisILSKit/releases/v0.0.2
 [0.0.1]: https://github.com/mcld/PolarisILSKit/releases/v0.0.1

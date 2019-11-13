@@ -22,18 +22,29 @@ if [[ -z $BLD_DOCKER_IMAGE ]]; then
 fi
 
 if BLD_GITBRANCH=$(git symbolic-ref --short -q HEAD); then
+  echo "=== On git branch $BLD_GITBRANCH"
   BLD_BRANCH=$BLD_GITBRANCH
   BLD_BRANCH_FOUND=true
 else
   # Azure DevOps works in detached HEAD state, get branch from variable
   BLD_GITBRANCH=$BUILD_SOURCEBRANCHNAME
   if [[ -n $BLD_GITBRANCH ]]; then
+    echo "=== On Azure branch $BLD_GITBRANCH"  
     BLD_BRANCH=$BLD_GITBRANCH
 	BLD_BRANCH_FOUND=true
+  fi
+  if [[ $BLD_BRANCH_FOUND = false ]]; then
+    BLD_GITBRANCH=$TRAVIS_BRANCH
+    if [[ -n $BLD_GITBRANCH ]]; then
+      echo "=== On Travis CI branch $BLD_GITBRANCH"	
+      BLD_BRANCH=$BLD_GITBRANCH
+	  BLD_BRANCH_FOUND=true
+    fi
   fi
 fi
 
 if [[ -z $BLD_BRANCH ]]; then
+  echo "=== On unknown branch, flagging as unknown-branch"  
   BLD_BRANCH="unknown-branch"
 fi
 
