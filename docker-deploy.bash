@@ -3,7 +3,7 @@
 set -e
 
 NUGET_PUSH_SOURCE="https://api.nuget.org/v3/index.json"
-NUGET_PACKAGE_FILENAME=/app/publish/${NUGET_PROJECT_NAME}.*.nupkg
+NUGET_PACKAGE_FILENAME=(/app/publish/${NUGET_PROJECT_NAME}.*.nupkg)
 #NUGET_PROJECT_NAME - export from environment
 #NUGET_APIKEY - export from environment
 

@@ -503,3 +503,7 @@ paket-files/
 [Ww]eb.config
 >>>>>>> d528254c279240a8fa5bfef628c616121b674b30
 [Ww]eb.*.config
+
+# Project-specific files
+
+deploy.env
