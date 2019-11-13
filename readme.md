@@ -1,25 +1,25 @@
-# CLC Polaris API Helper Library
+# PolarisILSKit
 
-The library was recently migrated from RestSharp to .NET HttpClient and is relatively unstable. Most methods have been briefly tested and basic funtionality is working. Other bugs and edge case errors might exist but should easy to fix. Not all methods are currently supported but will eventually be added.
+[.NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) library for communicating with the Polaris ILS, available as a package from the [NuGet Gallery](https://www.nuget.org/packages/PolarisILSKit/).
+
+This project is based on the [CLC Polaris API Helper Library](https://bitbucket.org/clcdpc/polaris-api-csharp/src/master/) (which is available in the NuGet Gallery as [PolarisApiLibrary](https://www.nuget.org/packages/PolarisApiLibrary/)). It includes bug fixes and enhancements and is published under the NuGet package name PolarisILSKit.
+
+## Using the Polaris API Helper Library
 
 **Staff account credentials are only required for protected methods and overriding public methods**
 
-## Installation
+### Installation
 
-```
-#!c#
-
-Install-Package PolarisApiLibrary -Pre
+```c#
+Install-Package PolarisILSKit -Pre
 ```
 
 
-## Usage
+### Usage
 
-### Public Method
+#### Public Method
 
-```
-#!c#
-
+```c#
 var papi = new PapiClient
             {
                 AccessID = "your-access-id",
@@ -31,11 +31,9 @@ var papi = new PapiClient
             Console.WriteLine($"Hello {patron.Data.NameFirst}");
 ```
 
-### Protected Method 
+#### Protected Method 
 
-```
-#!c#
-
+```c#
 var papi = new PapiClient
             {
                 AccessID = "your-access-id",
@@ -53,11 +51,9 @@ var papi = new PapiClient
             Console.WriteLine(value);
 ```
 
-### Public Method Override
+#### Public Method Override
 
-```
-#!c#
-
+```c#
 var papi = new PapiClient
             {
                 AccessID = "your-access-id",
@@ -74,3 +70,7 @@ var papi = new PapiClient
             var patron = papi.PatronBasicDataGetOverride("123000000456");
             Console.WriteLine($"Hello {patron.Data.PatronBasicData.NameFirst}");
 ```
+
+## License
+
+The basis of this project ([CLC Polaris API Helper Library](https://bitbucket.org/clcdpc/polaris-api-csharp/src/master/)) was released under the [GPL v3.0](https://bitbucket.org/clcdpc/polaris-api-csharp/src/master/LICENSE.txt) license requiring all changes to be released under the same license.
