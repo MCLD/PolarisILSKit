@@ -5,13 +5,13 @@
     <CodeAnalysisRuleSet>../../RuleSet.ruleset</CodeAnalysisRuleSet>
     <Description>Provide access to view Polaris ILS data and make updates through the API</Description>
 	<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
-    <PackageReleaseNotes>See https://github.com/mcld/PolarisILSKit/packages</PackageReleaseNotes>
+    <PackageReleaseNotes>See https://github.com/MCLD/PolarisILSKit/releases/latest</PackageReleaseNotes>
     <Product>Polaris ILS Kit</Product>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/mcld/PolarisILSKit</RepositoryUrl>
     <TargetFramework>netstandard2.0</TargetFramework>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
-    <Version>0.0.2</Version>
+    <Version>0.0.3-beta</Version>
   </PropertyGroup>
 
   <ItemGroup>
